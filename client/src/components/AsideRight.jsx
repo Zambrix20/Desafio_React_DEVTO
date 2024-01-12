@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function AsideRight() {
     return (
         <aside className="flex flex-col gap-2">
-            <section className="bg-white text-black rounded-md p-1 border-solid border border-gray-200 h-[fit-content]">
+            <section className="bg-white text-black rounded-md border-solid border border-gray-200 h-[fit-content]">
                 <header className="p-4 rounded-md">
                     <h3 className="text-xl font-bold hover:text-blue-700 cursor-pointer ">#discuss</h3>
                     <div className="text-gray-500 text-xs">Discussion threads targeting the whole community</div>
@@ -27,7 +27,7 @@ export default function AsideRight() {
                     </div>
                 </div>
             </section>
-            <section className="bg-white text-black rounded-md p-1 border-solid border border-gray-200">
+            <section className="bg-white text-black rounded-md border-solid border border-gray-200">
                 <header className="p-4 rounded-md">
                     <h3 className="text-xl font-bold hover:text-blue-700 cursor-pointer ">#watercooler</h3>
                     <div className="text-gray-500 text-xs">Light, and off-topic conversation</div>

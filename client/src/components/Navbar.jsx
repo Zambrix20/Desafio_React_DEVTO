@@ -21,9 +21,7 @@ export default function Navbar() {
                                 Create Post
                             </Link>
                         </li>
-                        <li
-                            className="text-black font-bold"
-                        >Bienvenido {user.username}</li>
+                        <li className="text-black font-bold">Bienvenido {user.username}</li>
                         <li>
                             <Link
                                 to="/"
@@ -39,7 +37,10 @@ export default function Navbar() {
                 ) : (
                     <>
                         <li>
-                            <Link to="/login" className="text-gray-600 p-3  rounded-md hover:bg-gray-100 hover:underline">
+                            <Link
+                                to="/login"
+                                className="text-gray-600 p-3  rounded-md hover:bg-gray-100 hover:underline"
+                            >
                                 Log in
                             </Link>
                         </li>

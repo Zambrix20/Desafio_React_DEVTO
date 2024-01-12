@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useTasks } from "../context/TasksContext";
+import { useNavigate } from "react-router-dom";
 
 import dayjs from "dayjs";
 import utc from "dayjs/plugin/utc";
@@ -9,6 +10,8 @@ dayjs.extend(utc); // Esto es para que dayjs pueda manejar fechas en formato UTC
 // este esta pasando como props a TaskCard
 export default function TaskCard({ task }) {
     const { deleteTask } = useTasks();
+
+    const navigate = useNavigate();
 
     return (
         // <div className="bg-zinc-800 max-w-md w-full p-10 rounded-md ">
@@ -37,7 +40,9 @@ export default function TaskCard({ task }) {
         //         }
         //     </p>
         // </div>
-        <article className="bg-white rounded-md mb-5">
+        <article
+            className="bg-white rounded-md mb-5 cursor-pointer hover:border-zinc-500/50 border-solid border-[1px] "
+        >
             <img
                 // src="https://res.cloudinary.com/practicaldev/image/fetch/s--F6jCmbz_--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/zbyro9f39xdeowboserg.png"
                 src="https://picsum.photos/650/273"
@@ -63,7 +68,9 @@ export default function TaskCard({ task }) {
                     </div>
                 </div>
                 <div className="pl-10">
-                    <h2 className="font-bold text-4xl hover:text-blue-700 cursor-pointer mb-3">
+                    <h2 className="font-bold text-4xl hover:text-blue-700 cursor-pointer mb-3" onClick={() => {
+                        navigate(`/detail-task/${task._id}`);
+                    }}>
                         {task.title}
                     </h2>
                     <div className="flex flex-wrap">
@@ -140,6 +147,7 @@ export default function TaskCard({ task }) {
                         </div>
                     </div>
                 </div>
+
                 <div className="flex gap-x-2 items-center justify-end">
                     <button
                         className="bg-red-500 hover:bg-red-600 text-white px-4 py-1 rounded-md"

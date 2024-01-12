@@ -23,7 +23,7 @@ export default function TasksPage() {
 
     return (
         // <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-2">
-        <div className="grid grid-cols-[22%_56%_22%] gap-4 ">
+        <div className="grid grid-cols-[20%_52%_24%] max-w-screen-xl mx-auto gap-4 ">
             <AsideLeft />
             {/* {
                 // El task contiene el id, title, description, createdAt, updatedAt y es pasado como props a TaskCard
