@@ -1,0 +1,5 @@
+# Archivo de configuración de la aplicación
+src/config.js
+
+# Carpeta node_modules
+node_modules
