@@ -9,6 +9,8 @@ dayjs.extend(utc); // Esto es para que dayjs pueda manejar fechas en formato UTC
 // task viene de client/src/pages/TasksPage.jsx y es un objeto que contiene el id, title, description, createdAt, updatedAt,
 // este esta pasando como props a TaskCard
 export default function TaskCard({ task }) {
+
+    // console.log('tasks123', task);
     const { deleteTask } = useTasks();
 
     const navigate = useNavigate();
