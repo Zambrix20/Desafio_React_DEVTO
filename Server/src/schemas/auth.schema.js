@@ -1,4 +1,4 @@
-import { z } from 'zod';
+import { z } from 'zod'; // Importamos zod para validar los datos que se envian en el body de la peticion
 
 // Para validar los datos que se envian en el body de la peticion que son los datos del usuario
 export const registerSchema = z.object({
