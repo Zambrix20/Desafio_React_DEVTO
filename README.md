@@ -6,7 +6,7 @@ El desafio consistio en hacer un clone de la pagina web Dev.to con la libreria R
 
 1. Clonar el repositorio `git clone https://github.com/Zambrix20/Desafio_React_DEVTO.git`
 2. Navegar al contenido de las capertas con `cd Desafio_React_DEVTO`
-3. Instalar las dependencias: se explicara en el la seccion de **Instalacion local**
+3. Instalar las dependencias: se explicara en la seccion de **Instalacion local**
 
 ## Instalación Local
 
@@ -57,6 +57,7 @@ El backend de este proyecto se ha desarrollado utilizando las siguientes herrami
 El frontend de este proyecto se ha desarrollado utilizando las siguientes herramientas:
 
 - **React.js**: Una biblioteca de JavaScript para construir interfaces de usuario.
+- **Vite**: Entorno de desarrollo ultrarrápido para aplicaciones web modernas. Destaca por su eficiencia en la compilación y recarga instantánea.
 - **TaildwindCSS**: Un marco de diseño CSS utilizable con JavaScript para construir interfaces de usuario modernas y con un enfoque de estilo utilitario.
 - **Axios**: Una biblioteca de JavaScript utilizada para hacer solicitudes HTTP desde el navegador.
 - **React Router DOM**: Una biblioteca de enrutamiento para React que permite la navegación entre componentes React de manera declarativa en una aplicación.
